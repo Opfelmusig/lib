@@ -1,0 +1,64 @@
+{
+  "name": "@opfelmusig/lib",
+  "version": "0.0.0",
+  "description": "A fully typed Apple Music API client",
+  "keywords": [
+    "apple-music",
+    "apple-music-api",
+    "musickit",
+    "typescript"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opfelmusig/lib.git"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./types": {
+      "types": "./dist/types/public.d.ts",
+      "import": "./dist/types/public.js"
+    },
+    "./helpers": {
+      "types": "./dist/helpers/public.d.ts",
+      "import": "./dist/helpers/public.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org",
+    "tag": "latest"
+  },
+  "scripts": {
+    "exp": "bun --console-depth 100 src/_experimenting.ts",
+    "lint": "oxlint .",
+    "lint:fix": "oxlint . --fix --fix-suggestions",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "setup": "lefthook install",
+    "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "dev": "bun x concurrently \"tsc -p tsconfig.build.json -w\" \"tsc-alias -p tsconfig.build.json -w\"",
+    "typecheck": "tsc -p tsconfig.json",
+    "prepack": "bun run build"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "lefthook": "^2.2.1",
+    "oxfmt": "^0.72.0",
+    "oxlint": "^1.87.0",
+    "thisval": "^0.1.1",
+    "tsc-alias": "^1.9.7",
+    "typescript": "^7.0.2"
+  }
+}

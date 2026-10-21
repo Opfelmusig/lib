@@ -1,0 +1,15 @@
+src
+tsconfig.json
+tsconfig.build.json
+node_modules
+.env
+*.tgz
+.oxfmtrc.json
+.oxlintrc.json
+experimental
+tests
+.vscode
+.github
+_concept.ts
+.gitattributes
+lefthook.yml

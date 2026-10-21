@@ -1,0 +1,33 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "ignorePatterns": ["dist/**", "experimental/**", "node_modules/**", "**/*.d.ts"],
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_",
+        "caughtErrors": "all",
+        "caughtErrorsIgnorePattern": "^_",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          {
+            "group": ["../*", "../**", "./*", "./**", ".", ".."],
+            "message": "Use the '@/...' alias instead of relative imports."
+          },
+          {
+            "group": ["@/index", "@/types/public"],
+            "message": "Import types directly from their source module."
+          }
+        ]
+      }
+    ]
+  }
+}
