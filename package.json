@@ -8,7 +8,7 @@
     "musickit",
     "typescript"
   ],
-  "license": "MIT",
+  "license": "GPL-3.0-only",
   "repository": {
     "type": "git",
     "url": "https://github.com/opfelmusig/lib.git"
