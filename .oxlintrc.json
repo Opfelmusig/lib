@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "ignorePatterns": ["dist/**", "experimental/**", "node_modules/**", "**/*.d.ts"],
+  "ignorePatterns": ["dist/**", "node_modules/**"],
   "rules": {
     "no-unused-vars": [
       "error",

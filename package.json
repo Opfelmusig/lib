@@ -38,7 +38,6 @@
     "tag": "latest"
   },
   "scripts": {
-    "exp": "bun --console-depth 100 src/_experimenting.ts",
     "lint": "oxlint .",
     "lint:fix": "oxlint . --fix --fix-suggestions",
     "format": "oxfmt",

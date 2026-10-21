@@ -9,7 +9,7 @@
     "declarationMap": false,
     "sourceMap": false
   },
-  "exclude": ["src/_experimenting.ts", "tests"],
+  "exclude": ["tests"],
   "tsc-alias": {
     "resolveFullPaths": true,
     "resolveFullExtension": ".js"
