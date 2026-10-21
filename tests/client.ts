@@ -5,9 +5,9 @@ import type { OpfelMusigClient } from "@/core/client";
 declare const client: OpfelMusigClient;
 
 {
-  const response = client.catalog.songs.get("");
+  const response = await client.catalog.songs.get("");
 
-  const song = {} as Awaited<typeof response>["data"][number];
+  const song = response.data[0]!;
 
   thisval.is.type<"songs">(song.type);
 
@@ -16,9 +16,9 @@ declare const client: OpfelMusigClient;
 }
 
 {
-  const response = client.catalog.songs.getRelationship("", "syllable-lyrics");
+  const response = await client.catalog.songs.getRelationship("", "syllable-lyrics");
 
-  const song = {} as Awaited<typeof response>["data"][number];
+  const song = response.data[0]!;
 
   thisval.is.type<"syllable-lyrics">(song.type);
 
