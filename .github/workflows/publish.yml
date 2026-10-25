@@ -39,7 +39,7 @@ jobs:
       - name: Set package version
         run: |
           bun pm version \
-            "0.0.0-ci.${GITHUB_RUN_NUMBER}.sha-${GITHUB_SHA::7}" \
+            "0.0.1-ci.${GITHUB_RUN_NUMBER}.sha-${GITHUB_SHA::7}" \
             --no-git-tag-version
 
       - name: Publish

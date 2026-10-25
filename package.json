@@ -1,6 +1,6 @@
 {
   "name": "@opfelmusig/lib",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A fully typed Apple Music API client",
   "keywords": [
     "apple-music",
