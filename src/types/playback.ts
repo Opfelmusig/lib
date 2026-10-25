@@ -142,7 +142,8 @@ export interface PlayActivityIds {
 }
 
 export interface PlayActivityContainerIds {
-  "album-adam-id"?: string | number;
+  "album-adam-id"?: string;
+  "cloud-album-id"?: string;
   "global-playlist-id"?: string;
   "station-hash"?: string;
   "station-id"?: string;
