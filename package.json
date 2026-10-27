@@ -49,15 +49,15 @@
     "prepack": "bun run build"
   },
   "dependencies": {
-    "zod": "^4.6.5"
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
-    "lefthook": "^2.2.1",
-    "oxfmt": "^0.72.0",
-    "oxlint": "^1.87.0",
+    "lefthook": "^2.2.2",
+    "oxfmt": "^0.74.0",
+    "oxlint": "^1.89.0",
     "thisval": "^0.1.1",
-    "tsc-alias": "^1.9.7",
+    "tsc-alias": "^1.9.9",
     "typescript": "^7.0.2"
   }
 }
